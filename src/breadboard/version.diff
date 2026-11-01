@@ -1,0 +1,193 @@
+diff --git a/src/breadboard/sensor_task.cpp b/src/breadboard/sensor_task.cpp
+index 4ee2225..b782204 100644
+--- a/src/breadboard/sensor_task.cpp
++++ b/src/breadboard/sensor_task.cpp
+@@ -1,6 +1,7 @@
+ #include "sensor_task.h"
+ 
+ #include <modm/board.hpp>
++#include <modm/platform.hpp>
+ #include <modm/debug/logger.hpp>
+ #include <outpost/rtos/thread.h>
+ 
+@@ -10,29 +11,73 @@ using namespace Board;
+ static LoggerDevice loggerDevice;
+ static modm::log::Logger myLogger(loggerDevice);
+ 
++// LED pins
++using LedGreen  = modm::platform::GpioOutputB0;
++using LedYellow = modm::platform::GpioOutputE1;
++using LedRed    = modm::platform::GpioOutputB14;
++
+ void SensorTask::run()
+ {
++    // LED initialization (once)
++    LedGreen::setOutput(false);
++    LedYellow::setOutput(false);
++    LedRed::setOutput(false);
++
+     while (true)
+     {
++        // 1. Read temperature
+         read_sensor();
++
++        // 2. Update FSM
+         update_FSM();
+ 
++        // 3. Get FSM state
++        auto state = mTempMonitoring.getState();
++
++        // 4. FSM-driven LED behavior
++        switch (state)
++        {
++            case TemperatureMonitoring::State::NORMAL:
++                // Green steady, others off
++                LedGreen::set();
++                LedYellow::reset();
++                LedRed::reset();
++                outpost::rtos::Thread::sleep(outpost::time::Seconds(1));
++                break;
++
++            case TemperatureMonitoring::State::WARNING:
++                // Yellow slow blink
++                LedGreen::reset();
++                LedRed::reset();
++                LedYellow::toggle();
++                outpost::rtos::Thread::sleep(outpost::time::Seconds(1));
++                break;
++
++            case TemperatureMonitoring::State::CRITICAL:
++                // Red fast blink
++                LedGreen::reset();
++                LedYellow::reset();
++                LedRed::toggle();
++                outpost::rtos::Thread::sleep(outpost::time::Milliseconds(1));
++                break;
++        }
++
++        // 5. Logging
+         myLogger << "Temperature: "
+-                 << this->sensorValue
+-                 << " C"
++                 << sensorValue
++                 << " C | State: "
++                 << static_cast<int>(state)
+                  << modm::endl;
+-
+-        outpost::rtos::Thread::sleep(outpost::time::Seconds(8));
+     }
+ }
+ 
+ void SensorTask::read_sensor()
+ {
+     // Blocking call: starts conversion, waits, reads value
+-    this->sensorValue = mTempSensor->measure_temp();
++    sensorValue = mTempSensor->measure_temp();
+ }
+ 
+ void SensorTask::update_FSM()
+ {
+-    mTempMonitoring.setTemperature(this->sensorValue);
++    mTempMonitoring.setTemperature(sensorValue);
+ }
+diff --git a/src/breadboard/temperature_monitoring.cpp b/src/breadboard/temperature_monitoring.cpp
+index 45fda39..3c74009 100644
+--- a/src/breadboard/temperature_monitoring.cpp
++++ b/src/breadboard/temperature_monitoring.cpp
+@@ -1,4 +1,4 @@
+-#include"temperature_monitoring.h"
++#include "temperature_monitoring.h"
+ 
+ void TemperatureMonitoring::changeUnit(Unit newUnit)
+ {
+@@ -18,4 +18,33 @@ int16_t TemperatureMonitoring::getTemperature()
+ void TemperatureMonitoring::setTemperature(int16_t newTemperature)
+ {
+     this->temperature = newTemperature;
+-}
+\ No newline at end of file
++
++    // -------- FSM with hysteresis --------
++    switch (state)
++    {
++        case State::NORMAL:
++            if (temperature >= 30)
++                state = State::WARNING;
++            break;
++
++        case State::WARNING:
++            if (temperature >= 40)
++                state = State::CRITICAL;
++            else if (temperature <= 28)
++                state = State::NORMAL;
++            break;
++
++        case State::CRITICAL:
++            if (temperature <= 38)
++                state = State::WARNING;
++            else if (temperature <= 28)
++                state = State::NORMAL;
++            break;
++    }
++}
++
++TemperatureMonitoring::State
++TemperatureMonitoring::getState() const
++{
++    return state;
++}
+diff --git a/src/breadboard/temperature_monitoring.h b/src/breadboard/temperature_monitoring.h
+index 97d2b8e..9be2591 100644
+--- a/src/breadboard/temperature_monitoring.h
++++ b/src/breadboard/temperature_monitoring.h
+@@ -1,26 +1,42 @@
+ #ifndef TEMPERATURE_MONITORING_H
+ #define TEMPERATURE_MONITORING_H
+ 
+-#include<cstdint>
++#include <cstdint>
+ 
+ enum Unit { CELSIUS, KELVIN, FAHRENHEIT };
+ 
+ class TemperatureMonitoring
+ {
+-    public:
+-
+-    TemperatureMonitoring():temperature(0),unit(CELSIUS){};
+-
++public:
++    // FSM states
++    enum class State
++    {
++        NORMAL,
++        WARNING,
++        CRITICAL
++    };
++
++    TemperatureMonitoring()
++        : temperature(0),
++          unit(CELSIUS),
++          state(State::NORMAL)
++    {}
++
++    // Existing interface
+     void changeUnit(Unit newUnit);
+     int16_t getTemperature();
+     void setTemperature(int16_t newTemperature);
+     Unit getUnit();
+ 
+-    private:
++    // FSM interface (NEW)
++    State getState() const;
+ 
++private:
+     int16_t temperature;
+     Unit unit;
+ 
++    // FSM state (NEW)
++    State state;
+ };
+ 
+-#endif
+\ No newline at end of file
++#endif

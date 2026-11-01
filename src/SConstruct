@@ -1,0 +1,67 @@
+# Copyright (c) 2017-2021, Niklas Hauser
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, this
+#    list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice,
+#    this list of conditions and the following disclaimer in the documentation
+#    and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+import os
+from os.path import join, abspath
+
+envGlobal = SConscript('../SConscript.common', must_exist=1)
+
+envGlobal["CCFLAGS"].remove("-Werror=format")
+
+envGlobal.GenerateAllRegisteredLibraries(explain = True)
+
+libdeps = ["sandbox_common", 
+           "sandbox_hal",
+           "modm"]
+
+envGlobal.InsertDependenciesIntoEnv(libdeps, explain=True)
+
+files = envGlobal.Glob("*.cpp")
+
+if envGlobal['target'] == "host":
+    files += envGlobal.Glob("simulation/*.cpp")
+    files += envGlobal.Glob("simulation/drv/*.cpp")
+    envGlobal.Append(CPPPATH=abspath("simulation"))
+elif envGlobal['target'] ==  "bb":
+    files += envGlobal.Glob("breadboard/*.cpp")
+    files += envGlobal.Glob("breadboard/drv/*.cpp")
+    envGlobal.Append(CPPPATH=abspath("breadboard"))
+
+unique_libs = []
+envGlobal["LIBS"].reverse()
+for lib in envGlobal["LIBS"]:
+    if lib not in unique_libs:
+        unique_libs.append(lib)
+unique_libs.reverse()
+envGlobal["LIBS"] = unique_libs
+
+p = envGlobal.BuildTarget(files)
+s = envGlobal.Strip("{}/src/{}-stripped.elf".format(envGlobal["BUILDPATH"], envGlobal["program_name"]), p)
+
+envGlobal.Install("../bin/fsw", [p, s])
+
+envGlobal.Alias("install", ["../bin/fsw"])
+
+Default(["build", "install"])
+
+

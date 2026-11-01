@@ -1,0 +1,97 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+# Copyright (c) 2022, German Aerospace Center (DLR)
+#
+# This file is part of the development version of OUTPOST.
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+# Authors:
+# - 2022, Tobias Pfeffer (DLR RY-AVS)
+
+import os
+
+vars = Variables('custom.py')
+vars.Add(BoolVariable('coverage', 'Set to build for coverage analysis', 0))
+vars.Add(BoolVariable('trap', 'Set trap on undefined behavior', 0))
+vars.Add(BoolVariable('use_outpost_asserts', 'activates internal testing assertions', 0))
+vars.Add(BoolVariable('debug', 'deactivates optimizations for better debugging', 0))
+vars.Add('append_buildpath', 'manual append to buildpath', '')
+vars.Add('param_extra_include', 'path to a parameter include', '')
+
+rootpath = os.path.abspath('../')
+outpost_core_path = os.path.abspath(os.path.join(rootpath, 'ext/outpost-core'))
+
+envGlobal = Environment(toolpath=[os.path.join(rootpath, 'ext/scons-build-tools/site_tools'),
+                                  os.path.join(rootpath, 'scons-build-tools/site_tools'), ],
+                        buildroot=[rootpath + 'build/'],
+                        tools=['utils_buildformat'],
+                        variables=vars,
+                        OUTPOST_CORE_PATH=outpost_core_path,
+                        ENV=os.environ)
+Help(vars.GenerateHelpText(envGlobal))
+
+if envGlobal['coverage']:
+    envGlobal.Tool('compiler_hosted_gcc_coverage')
+    buildtype = 'coverage'
+else:
+    envGlobal.Tool('compiler_hosted_llvm_sanitizer')
+    buildtype = 'test'
+    if envGlobal['trap']:
+        envGlobal['CCFLAGS_other'] += ['-fsanitize-trap=undefined']
+        buildtype += '-trap' # it's a trap!
+
+if envGlobal['debug']:
+    print ('Debug mode, disabling optimization')
+    envGlobal['use_outpost_asserts'] = True
+    envGlobal['CCFLAGS_optimize'] = ['-O0', '-g2']
+    buildtype += '-debug'
+
+if envGlobal['use_outpost_asserts']:
+    envGlobal.Append(CCFLAGS_other=['-DOUTPOST_USE_ASSERT=1'])
+
+if envGlobal['append_buildpath']:
+    buildtype = envGlobal['append_buildpath']
+
+if envGlobal['param_extra_include']:
+    print (f"Using custom parameter include path '{envGlobal['param_extra_include']}'")
+    realpath = os.path.realpath(envGlobal['param_extra_include'])
+    import hashlib; h = hashlib.new('sha1', usedforsecurity=False); h.update(realpath.encode('ascii'))
+    if not os.path.exists(realpath):
+        raise BaseException(f"Provided include path '{realpath}' could not be found!")
+    buildtype = os.path.join(buildtype, f"param_{h.hexdigest()[:12]}")
+    # appending it first, before others, to have precedence in include resolution
+    envGlobal.Append(CPPPATH=[realpath])
+
+envGlobal['BUILDTYPE'] = buildtype
+envGlobal['BUILDPATH'] = os.path.join(rootpath, 'build', buildtype)
+
+envGlobal.VariantDir('$BUILDPATH', rootpath, duplicate=False)
+# build core independently
+envGlobal.VariantDir('$BUILDPATH/core', outpost_core_path, duplicate=False)
+
+envGlobal.Tool('compilation_db')
+
+envGlobal.Append(CPPPATH=[
+    os.path.join(rootpath, 'modules/common/src')])
+
+# Path needs to be in correct variant dir mapping
+envGlobal.SConscript('$BUILDPATH/core/SConscript.library', exports='envGlobal')
+envGlobal.SConscript('$BUILDPATH/core/SConscript.test', exports='envGlobal')
+envGlobal.DiscardAllRegisteredTests()   # discard outpost_core tests
+
+modules = envGlobal.FindFilesThatAreInACertainFolder('src', 'SConscript', searchdir="$BUILDPATH/modules")
+envGlobal.SConscript(modules, exports='envGlobal')
+
+envGlobal.AppendUnique(LIBPATH=['/usr/lib', os.path.join(envGlobal['BUILDPATH'], 'lib')])
+
+tests = envGlobal.FindFilesThatAreInACertainFolder('test', 'SConscript', searchdir="$BUILDPATH/modules")
+envGlobal.SConscript(tests, exports='envGlobal')
+
+print ("Outpost stubs:", end=' ')
+envGlobal.GenerateAllRegisteredLibraries(explain = True)
+
+envGlobal.GenerateAllRegisteredTests(explain = "targets") # can also be a (prefix) module name

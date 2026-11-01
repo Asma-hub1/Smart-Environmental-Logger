@@ -1,0 +1,1695 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<buildlog>
+  <outpath>../../gen/sandbox-sim</outpath>
+  <operation>
+    <module>lbuild</module>
+    <source>buildlog.xml.in</source>
+    <destination>project.xml.log</destination>
+  </operation>
+  <operation>
+    <module>modm:architecture</module>
+    <source>../../ext/modm/src/modm/architecture/architecture.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture.hpp</destination>
+    <time>0.107 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture</module>
+    <source>../../ext/modm/src/modm/architecture/detect.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/detect.hpp</destination>
+    <time>0.120 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture</module>
+    <source>../../ext/modm/src/modm/architecture/interface.hpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface.hpp</destination>
+    <time>1.446 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture</module>
+    <source>../../ext/modm/src/modm/architecture/interface/peripheral.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/peripheral.hpp</destination>
+    <time>0.100 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture</module>
+    <source>../../ext/modm/src/modm/architecture/utils.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/utils.hpp</destination>
+    <time>0.172 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture:accessor</module>
+    <source>../../ext/modm/src/modm/architecture/interface/accessor.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/accessor.hpp</destination>
+    <time>0.411 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture:accessor</module>
+    <source>../../ext/modm/src/modm/architecture/interface/accessor_flash.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/accessor_flash.hpp</destination>
+    <time>0.218 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture:accessor</module>
+    <source>../../ext/modm/src/modm/architecture/interface/accessor_ram.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/accessor_ram.hpp</destination>
+    <time>0.128 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture:assert</module>
+    <source>../../ext/modm/src/modm/architecture/interface/assert.h.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/assert.h</destination>
+    <time>3.690 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture:assert</module>
+    <source>../../ext/modm/src/modm/architecture/interface/assert.hpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/assert.hpp</destination>
+    <time>1.841 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture:memory</module>
+    <source>../../ext/modm/src/modm/architecture/interface/memory.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/memory.hpp</destination>
+    <time>0.205 ms</time>
+  </operation>
+  <operation>
+    <module>modm:architecture:register</module>
+    <source>../../ext/modm/src/modm/architecture/interface/register.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/architecture/interface/register.hpp</destination>
+    <time>0.150 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build</module>
+    <source>../../ext/modm/tools/build_script_generator/probe_gdbinit.in</source>
+    <destination>../../gen/sandbox-sim/modm/gdbinit_bmp</destination>
+    <time>0.126 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build</module>
+    <source>../../ext/modm/tools/build_script_generator/probe_gdbinit.in</source>
+    <destination>../../gen/sandbox-sim/modm/gdbinit_jlink</destination>
+    <time>0.193 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build</module>
+    <source>../../ext/modm/tools/build_script_generator/probe_gdbinit.in</source>
+    <destination>../../gen/sandbox-sim/modm/gdbinit_openocd</destination>
+    <time>1.785 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build</module>
+    <source>../../ext/modm/tools/modm_tools/__init__.py.in</source>
+    <destination>../../gen/sandbox-sim/modm/modm_tools/__init__.py</destination>
+    <time>1.911 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build</module>
+    <source>../../ext/modm/tools/modm_tools/find_files.py</source>
+    <destination>../../gen/sandbox-sim/modm/modm_tools/find_files.py</destination>
+    <time>0.123 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build</module>
+    <source>../../ext/modm/tools/modm_tools/utils.py</source>
+    <destination>../../gen/sandbox-sim/modm/modm_tools/utils.py</destination>
+    <time>0.199 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/resources/SConscript.in</source>
+    <destination>../../gen/sandbox-sim/modm/SConscript</destination>
+    <time>29.640 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/resources/SConscript.in</source>
+    <destination>../../gen/sandbox-sim/outpost/SConscript</destination>
+    <time>24.850 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/resources/build_target.py.in</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/build_target.py</destination>
+    <time>3.903 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/comstr.py</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/comstr.py</destination>
+    <time>0.222 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/find_files.py</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/find_files.py</destination>
+    <time>0.104 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/gcc_retarget.py</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/gcc_retarget.py</destination>
+    <time>0.107 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/qtcreator.py</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/qtcreator.py</destination>
+    <time>0.227 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/qtcreator/project.config.in</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/qtcreator/project.config.in</destination>
+    <time>0.076 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/qtcreator/project.creator.in</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/qtcreator/project.creator.in</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/qtcreator/project.files.in</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/qtcreator/project.files.in</destination>
+    <time>0.108 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/qtcreator/project.includes.in</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/qtcreator/project.includes.in</destination>
+    <time>0.083 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/template.py</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/template.py</destination>
+    <time>0.115 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/utils.py</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/utils.py</destination>
+    <time>0.116 ms</time>
+  </operation>
+  <operation>
+    <module>modm:build:scons</module>
+    <source>../../ext/modm/tools/build_script_generator/scons/site_tools/utils_buildpath.py</source>
+    <destination>../../gen/sandbox-sim/modm/scons/site_tools/utils_buildpath.py</destination>
+    <time>0.139 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/debug.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug.hpp</destination>
+    <time>0.108 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/debug.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/debug.hpp</destination>
+    <time>0.081 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger.hpp</destination>
+    <time>0.157 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/hosted/default_style.cpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/hosted/default_style.cpp</destination>
+    <time>0.092 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/level.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/level.hpp</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/logger.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/logger.hpp</destination>
+    <time>0.123 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/style.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/style.hpp</destination>
+    <time>0.074 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/style/prefix.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/style/prefix.hpp</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/style/prefix_impl.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/style/prefix_impl.hpp</destination>
+    <time>0.546 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/style/std_colour.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/style/std_colour.hpp</destination>
+    <time>0.073 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/style/std_colour_impl.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/style/std_colour_impl.hpp</destination>
+    <time>0.109 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/style_impl.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/style_impl.hpp</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/logger/style_wrapper.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/logger/style_wrapper.hpp</destination>
+    <time>0.063 ms</time>
+  </operation>
+  <operation>
+    <module>modm:debug</module>
+    <source>../../ext/modm/src/modm/debug/module.md</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/debug/module.md</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>modm:driver:terminal</module>
+    <source>../../ext/modm/src/modm/driver/io/terminal.cpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/driver/io/terminal.cpp</destination>
+    <time>0.090 ms</time>
+  </operation>
+  <operation>
+    <module>modm:driver:terminal</module>
+    <source>../../ext/modm/src/modm/driver/io/terminal.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/driver/io/terminal.hpp</destination>
+    <time>0.116 ms</time>
+  </operation>
+  <operation>
+    <module>modm:io</module>
+    <source>../../ext/modm/src/modm/io/io.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/io.hpp</destination>
+    <time>0.154 ms</time>
+  </operation>
+  <operation>
+    <module>modm:io</module>
+    <source>../../ext/modm/src/modm/io/iodevice.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/io/iodevice.hpp</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>modm:io</module>
+    <source>../../ext/modm/src/modm/io/iodevice_wrapper.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/io/iodevice_wrapper.hpp</destination>
+    <time>0.097 ms</time>
+  </operation>
+  <operation>
+    <module>modm:io</module>
+    <source>../../ext/modm/src/modm/io/iostream.cpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/io/iostream.cpp</destination>
+    <time>0.136 ms</time>
+  </operation>
+  <operation>
+    <module>modm:io</module>
+    <source>../../ext/modm/src/modm/io/iostream.hpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/io/iostream.hpp</destination>
+    <time>4.445 ms</time>
+  </operation>
+  <operation>
+    <module>modm:io</module>
+    <source>../../ext/modm/src/modm/io/iostream_printf.cpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/io/iostream_printf.cpp</destination>
+    <time>5.388 ms</time>
+  </operation>
+  <operation>
+    <module>modm:io</module>
+    <source>../../ext/modm/src/modm/io/module.md</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/io/module.md</destination>
+    <time>0.080 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math</module>
+    <source>../../ext/modm/src/modm/math/math.hpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math.hpp</destination>
+    <time>1.279 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math</module>
+    <source>../../ext/modm/src/modm/math/tolerance.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/tolerance.hpp</destination>
+    <time>0.109 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:units</module>
+    <source>../../ext/modm/src/modm/math/units.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/units.hpp</destination>
+    <time>0.138 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils.hpp</destination>
+    <time>0.157 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/arithmetic_traits.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/arithmetic_traits.hpp</destination>
+    <time>0.111 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/bit_constants.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/bit_constants.hpp</destination>
+    <time>0.096 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/bit_operation.cpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/bit_operation.cpp</destination>
+    <time>0.093 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/bit_operation.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/bit_operation.hpp</destination>
+    <time>0.096 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/crc.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/crc.hpp</destination>
+    <time>0.108 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/endianness.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/endianness.hpp</destination>
+    <time>0.090 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/integer_traits.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/integer_traits.hpp</destination>
+    <time>0.091 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/misc.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/misc.hpp</destination>
+    <time>0.096 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/operator.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/operator.hpp</destination>
+    <time>0.140 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/operator_impl.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/operator_impl.hpp</destination>
+    <time>0.188 ms</time>
+  </operation>
+  <operation>
+    <module>modm:math:utils</module>
+    <source>../../ext/modm/src/modm/math/utils/pc/operator.cpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/math/utils/pc/operator.cpp</destination>
+    <time>0.143 ms</time>
+  </operation>
+  <operation>
+    <module>modm:platform</module>
+    <source>../../ext/modm/src/modm/platform/platform.hpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/platform.hpp</destination>
+    <time>1.408 ms</time>
+  </operation>
+  <operation>
+    <module>modm:platform:core</module>
+    <source>../../ext/modm/src/modm/platform/core/cortex/assert.cpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/platform/core/assert.cpp</destination>
+    <time>13.297 ms</time>
+  </operation>
+  <operation>
+    <module>modm:platform:core</module>
+    <source>../../ext/modm/src/modm/platform/core/cortex/assert_impl.hpp.in</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/platform/core/assert_impl.hpp</destination>
+    <time>1.829 ms</time>
+  </operation>
+  <operation>
+    <module>modm:platform:core</module>
+    <source>../../ext/modm/src/modm/platform/core/cortex/flash_reader_impl.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/platform/core/flash_reader_impl.hpp</destination>
+    <time>0.191 ms</time>
+  </operation>
+  <operation>
+    <module>modm:platform:core</module>
+    <source>../../ext/modm/src/modm/platform/core/hosted/memory.cpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/platform/core/memory.cpp</destination>
+    <time>0.179 ms</time>
+  </operation>
+  <operation>
+    <module>modm:printf</module>
+    <source>../../ext/modm/ext/eyalroz/printf/src/printf/printf.c</source>
+    <destination>../../gen/sandbox-sim/modm/ext/printf/printf.c</destination>
+    <time>0.190 ms</time>
+  </operation>
+  <operation>
+    <module>modm:printf</module>
+    <source>../../ext/modm/ext/eyalroz/printf/src/printf/printf.h</source>
+    <destination>../../gen/sandbox-sim/modm/ext/printf/printf.h</destination>
+    <time>0.248 ms</time>
+  </operation>
+  <operation>
+    <module>modm:printf</module>
+    <source>../../ext/modm/ext/eyalroz/printf_config.h.in</source>
+    <destination>../../gen/sandbox-sim/modm/ext/printf/printf_config.h</destination>
+    <time>1.939 ms</time>
+  </operation>
+  <operation>
+    <module>modm:utils</module>
+    <source>../../ext/modm/src/modm/utils/aligned_storage.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/utils/aligned_storage.hpp</destination>
+    <time>0.066 ms</time>
+  </operation>
+  <operation>
+    <module>modm:utils</module>
+    <source>../../ext/modm/src/modm/utils/allocator.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/utils/allocator.hpp</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>modm:utils</module>
+    <source>../../ext/modm/src/modm/utils/inplace_any.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/utils/inplace_any.hpp</destination>
+    <time>0.086 ms</time>
+  </operation>
+  <operation>
+    <module>modm:utils</module>
+    <source>../../ext/modm/src/modm/utils/inplace_function.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/utils/inplace_function.hpp</destination>
+    <time>0.119 ms</time>
+  </operation>
+  <operation>
+    <module>modm:utils</module>
+    <source>../../ext/modm/src/modm/utils/type_traits.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/utils/type_traits.hpp</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>modm:utils</module>
+    <source>../../ext/modm/src/modm/utils/utils.hpp</source>
+    <destination>../../gen/sandbox-sim/modm/src/modm/utils.hpp</destination>
+    <time>0.100 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:base</module>
+    <source>../../ext/outpost-core/modules/base/src/outpost/base/bounded_string.h</source>
+    <destination>../../gen/sandbox-sim/outpost/base/bounded_string.h</destination>
+    <time>0.103 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:base</module>
+    <source>../../ext/outpost-core/modules/base/src/outpost/base/callable.h</source>
+    <destination>../../gen/sandbox-sim/outpost/base/callable.h</destination>
+    <time>0.094 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:base</module>
+    <source>../../ext/outpost-core/modules/base/src/outpost/base/enum_range_trait.h</source>
+    <destination>../../gen/sandbox-sim/outpost/base/enum_range_trait.h</destination>
+    <time>0.084 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:base</module>
+    <source>../../ext/outpost-core/modules/base/src/outpost/base/fixedpoint.h</source>
+    <destination>../../gen/sandbox-sim/outpost/base/fixedpoint.h</destination>
+    <time>0.128 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:base</module>
+    <source>../../ext/outpost-core/modules/base/src/outpost/base/slice.h</source>
+    <destination>../../gen/sandbox-sim/outpost/base/slice.h</destination>
+    <time>0.151 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:base</module>
+    <source>../../ext/outpost-core/modules/base/src/outpost/base/testing_assert.h</source>
+    <destination>../../gen/sandbox-sim/outpost/base/testing_assert.h</destination>
+    <time>0.088 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/best_uint_for.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/best_uint_for.h</destination>
+    <time>0.086 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/circular_singly_linked_list.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/circular_singly_linked_list.h</destination>
+    <time>0.087 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/circular_singly_linked_list_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/circular_singly_linked_list_impl.h</destination>
+    <time>0.097 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/compile_time_list.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/compile_time_list.h</destination>
+    <time>0.128 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/container.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/container.h</destination>
+    <time>0.082 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/deque.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/deque.h</destination>
+    <time>0.107 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/deque_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/deque_impl.h</destination>
+    <time>0.089 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/fixed_ordered_map.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/fixed_ordered_map.h</destination>
+    <time>0.159 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/fixed_ordered_map_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/fixed_ordered_map_impl.h</destination>
+    <time>0.088 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/fixed_size_array.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/fixed_size_array.h</destination>
+    <time>0.100 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/implicit_list.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/implicit_list.h</destination>
+    <time>0.084 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/list.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/list.h</destination>
+    <time>0.092 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/list_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/list_impl.h</destination>
+    <time>0.134 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/member_function_store.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/member_function_store.h</destination>
+    <time>0.082 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/memory_pool.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/memory_pool.h</destination>
+    <time>0.096 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/memory_pool_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/memory_pool_impl.h</destination>
+    <time>0.097 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/reference_queue.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/reference_queue.h</destination>
+    <time>0.088 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer.h</destination>
+    <time>0.094 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_allocators/array_ring_buffer.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_allocators/array_ring_buffer.h</destination>
+    <time>0.098 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_allocators/array_ring_buffer_chunked.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_allocators/array_ring_buffer_chunked.h</destination>
+    <time>0.186 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_best_effort_variable_chunked.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_best_effort_variable_chunked.h</destination>
+    <time>0.089 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_chunked.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_chunked.h</destination>
+    <time>0.092 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_internal/ring_buffer_chunked_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_internal/ring_buffer_chunked_impl.h</destination>
+    <time>0.108 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_internal/ring_buffer_detail.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_internal/ring_buffer_detail.h</destination>
+    <time>0.100 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_internal/ring_buffer_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_internal/ring_buffer_impl.h</destination>
+    <time>0.133 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_internal/ring_buffer_variable_chunked_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_internal/ring_buffer_variable_chunked_impl.h</destination>
+    <time>0.112 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/ring_buffer_variable_chunked.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/ring_buffer_variable_chunked.h</destination>
+    <time>0.089 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/shared_buffer.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/container/shared_buffer.cpp</destination>
+    <time>0.084 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/shared_buffer.dox</source>
+    <destination>../../gen/sandbox-sim/outpost/container/shared_buffer.dox</destination>
+    <time>0.086 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/shared_buffer.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/shared_buffer.h</destination>
+    <time>0.132 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/shared_object_pool.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/shared_object_pool.h</destination>
+    <time>0.118 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:container</module>
+    <source>../../ext/outpost-core/modules/container/src/outpost/container/shared_ring_buffer.h</source>
+    <destination>../../gen/sandbox-sim/outpost/container/shared_ring_buffer.h</destination>
+    <time>0.089 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/algorithm</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/algorithm</destination>
+    <time>0.093 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/assert</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/assert</destination>
+    <time>0.096 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/byte</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/byte</destination>
+    <time>0.105 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/gsl</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/gsl</destination>
+    <time>0.092 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/gsl_algorithm</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/gsl_algorithm</destination>
+    <time>0.101 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/gsl_assert</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/gsl_assert</destination>
+    <time>0.101 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/gsl_byte</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/gsl_byte</destination>
+    <time>0.125 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/gsl_narrow</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/gsl_narrow</destination>
+    <time>0.103 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/gsl_util</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/gsl_util</destination>
+    <time>0.094 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/narrow</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/narrow</destination>
+    <time>0.093 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/pointers</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/pointers</destination>
+    <time>0.103 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/span</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/span</destination>
+    <time>0.122 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/span_ext</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/span_ext</destination>
+    <time>0.121 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/string_span</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/string_span</destination>
+    <time>0.240 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:ext:gsl</module>
+    <source>../../ext/outpost-core/ext/gsl/include/gsl/util</source>
+    <destination>../../gen/sandbox-sim/ext/gsl/util</destination>
+    <time>0.130 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/can_bus.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/can_bus.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/datagram_transport.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/datagram_transport.cpp</destination>
+    <time>0.062 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/datagram_transport.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/datagram_transport.h</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/file_system.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/file_system.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio.h</destination>
+    <time>0.139 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio/index.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio/index.h</destination>
+    <time>0.074 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio/input_pin.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio/input_pin.cpp</destination>
+    <time>0.066 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio/input_pin.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio/input_pin.h</destination>
+    <time>0.077 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio/interrupt_distribution.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio/interrupt_distribution.cpp</destination>
+    <time>0.152 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio/interrupt_distribution.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio/interrupt_distribution.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio/output_pin.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio/output_pin.h</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/gpio/view.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/gpio/view.h</destination>
+    <time>0.091 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/register.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/register.h</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/register_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/register_impl.h</destination>
+    <time>0.064 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/serial.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/serial.cpp</destination>
+    <time>0.106 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/serial.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/serial.h</destination>
+    <time>0.088 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/space_wire_multi_protocol_handler.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/space_wire_multi_protocol_handler.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/space_wire_multi_protocol_handler_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/space_wire_multi_protocol_handler_impl.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/spacewire.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/spacewire.cpp</destination>
+    <time>0.066 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/spacewire.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/spacewire.h</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/spi.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/spi.h</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/timecode.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/timecode.h</destination>
+    <time>0.064 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/timecode_dispatcher.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/timecode_dispatcher.h</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/timecode_provider.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/timecode_provider.h</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:hal</module>
+    <source>../../ext/outpost-core/modules/hal/src/outpost/hal/watchdog.h</source>
+    <destination>../../gen/sandbox-sim/outpost/hal/watchdog.h</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/barrier.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/barrier.cpp</destination>
+    <time>0.068 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/barrier.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/barrier.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/clock.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/clock.cpp</destination>
+    <time>0.066 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/clock.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/clock.h</destination>
+    <time>0.108 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/failure_handler.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/failure_handler.cpp</destination>
+    <time>0.067 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/internal/time.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/internal/time.cpp</destination>
+    <time>0.076 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/internal/time.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/internal/time.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/mutex.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/mutex.cpp</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/mutex.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/mutex.h</destination>
+    <time>0.084 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/periodic_task_manager.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/periodic_task_manager.cpp</destination>
+    <time>0.074 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/periodic_task_manager.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/periodic_task_manager.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/queue_raw.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/queue_raw.cpp</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/queue_raw.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/queue_raw.h</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/semaphore.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/semaphore.cpp</destination>
+    <time>0.067 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/semaphore.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/semaphore.h</destination>
+    <time>0.082 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/thread.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/thread.cpp</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/thread.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/thread.h</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/timer_raw.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/timer_raw.cpp</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/common/posix/outpost/posix/timer_raw.h</source>
+    <destination>../../gen/sandbox-sim/outpost/posix/timer_raw.h</destination>
+    <time>0.066 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/CMakeLists.txt</source>
+    <destination>../../gen/sandbox-sim/CMakeLists.txt</destination>
+    <time>0.100 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos.h</destination>
+    <time>0.265 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/barrier.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/barrier.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/clock.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/clock.h</destination>
+    <time>0.086 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/mutex.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/mutex.h</destination>
+    <time>0.103 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/periodic_task_manager.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/periodic_task_manager.h</destination>
+    <time>0.074 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/queue.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/queue.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/semaphore.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/semaphore.h</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/thread.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/thread.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/arch/posix/outpost/rtos/timer.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/timer.h</destination>
+    <time>0.074 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/checkpoint.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/checkpoint.cpp</destination>
+    <time>0.081 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/checkpoint.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/checkpoint.h</destination>
+    <time>0.078 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/failure_handler.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/failure_handler.h</destination>
+    <time>0.093 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/failure_handler_common.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/failure_handler_common.cpp</destination>
+    <time>0.081 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/locking_policy.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/locking_policy.h</destination>
+    <time>0.106 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/looping_thread.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/looping_thread.cpp</destination>
+    <time>0.149 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/looping_thread.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/looping_thread.h</destination>
+    <time>0.088 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/mutex_guard.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/mutex_guard.h</destination>
+    <time>0.082 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/periodic_thread.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/periodic_thread.cpp</destination>
+    <time>0.077 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/periodic_thread.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/periodic_thread.h</destination>
+    <time>0.076 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/stoppable_thread.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/stoppable_thread.cpp</destination>
+    <time>0.100 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:rtos</module>
+    <source>../../ext/outpost-core/modules/rtos/src/outpost/rtos/stoppable_thread.h</source>
+    <destination>../../gen/sandbox-sim/outpost/rtos/stoppable_thread.h</destination>
+    <time>0.081 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc.h</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc.h</destination>
+    <time>0.112 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/subscriber.h</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/subscriber.h</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/subscription.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/subscription.cpp</destination>
+    <time>0.080 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/subscription.h</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/subscription.h</destination>
+    <time>0.083 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/subscription_raw.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/subscription_raw.cpp</destination>
+    <time>0.077 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/subscription_raw.h</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/subscription_raw.h</destination>
+    <time>0.091 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/topic.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/topic.cpp</destination>
+    <time>0.078 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/topic.h</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/topic.h</destination>
+    <time>0.083 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/topic_raw.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/topic_raw.cpp</destination>
+    <time>0.078 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:smpc</module>
+    <source>../../ext/outpost-core/modules/smpc/src/outpost/smpc/topic_raw.h</source>
+    <destination>../../gen/sandbox-sim/outpost/smpc/topic_raw.h</destination>
+    <time>0.095 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/big_endian_int.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/big_endian_int.h</destination>
+    <time>0.268 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/bit_access.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/bit_access.h</destination>
+    <time>0.063 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/bit_access_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/bit_access_impl.h</destination>
+    <time>0.137 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/bitfield.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/bitfield.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/bitfield_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/bitfield_impl.h</destination>
+    <time>0.089 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/bitorder.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/bitorder.h</destination>
+    <time>0.062 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/bitstream.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/bitstream.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/output_stream.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/output_stream.h</destination>
+    <time>0.062 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/serializable_object.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/serializable_object.cpp</destination>
+    <time>0.064 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/serializable_object.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/serializable_object.h</destination>
+    <time>0.082 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/serialize.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/serialize.h</destination>
+    <time>0.074 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/serialize_little_endian.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/serialize_little_endian.h</destination>
+    <time>0.085 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/serialize_little_endian_traits.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/serialize_little_endian_traits.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/serialize_storage_traits.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/serialize_storage_traits.h</destination>
+    <time>0.062 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/serialize_traits.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/serialize_traits.h</destination>
+    <time>0.396 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/storage.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/storage.h</destination>
+    <time>0.083 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/variable_width_enum.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/variable_width_enum.h</destination>
+    <time>0.118 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:storage</module>
+    <source>../../ext/outpost-core/modules/storage/src/outpost/storage/variable_width_integer.h</source>
+    <destination>../../gen/sandbox-sim/outpost/storage/variable_width_integer.h</destination>
+    <time>0.099 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:support</module>
+    <source>../../ext/outpost-core/modules/support/src/outpost/support/heartbeat.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/support/heartbeat.cpp</destination>
+    <time>0.093 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:support</module>
+    <source>../../ext/outpost-core/modules/support/src/outpost/support/heartbeat.h</source>
+    <destination>../../gen/sandbox-sim/outpost/support/heartbeat.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:support</module>
+    <source>../../ext/outpost-core/modules/support/src/outpost/support/heartbeat_limiter.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/support/heartbeat_limiter.cpp</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:support</module>
+    <source>../../ext/outpost-core/modules/support/src/outpost/support/heartbeat_limiter.h</source>
+    <destination>../../gen/sandbox-sim/outpost/support/heartbeat_limiter.h</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb.h</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/bus_channel.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/bus_channel.h</destination>
+    <time>0.087 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/bus_channel_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/bus_channel_impl.h</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/bus_distributor.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/bus_distributor.h</destination>
+    <time>0.068 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/bus_distributor_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/bus_distributor_impl.h</destination>
+    <time>0.102 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/bus_handler_thread.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/bus_handler_thread.h</destination>
+    <time>0.064 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/bus_handler_thread_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/bus_handler_thread_impl.h</destination>
+    <time>0.065 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/bus_subscription.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/bus_subscription.h</destination>
+    <time>0.074 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/default_message_filter.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/default_message_filter.h</destination>
+    <time>0.068 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/message_handler.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/message_handler.h</destination>
+    <time>0.063 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/software_bus.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/software_bus.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/software_bus_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/software_bus_impl.h</destination>
+    <time>0.063 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:swb</module>
+    <source>../../ext/outpost-core/modules/swb/src/outpost/swb/types.h</source>
+    <destination>../../gen/sandbox-sim/outpost/swb/types.h</destination>
+    <time>0.067 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time.h</destination>
+    <time>0.121 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/clock.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/clock.h</destination>
+    <time>0.083 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/date.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/date.h</destination>
+    <time>0.086 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/date_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/date_impl.h</destination>
+    <time>0.085 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/duration.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/duration.h</destination>
+    <time>0.088 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/quota.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/time/quota.cpp</destination>
+    <time>0.091 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/quota.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/quota.h</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/quota_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/quota_impl.h</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/time_epoch.cpp</source>
+    <destination>../../gen/sandbox-sim/outpost/time/time_epoch.cpp</destination>
+    <time>0.133 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/time_epoch.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/time_epoch.h</destination>
+    <time>0.081 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/time_epoch_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/time_epoch_impl.h</destination>
+    <time>0.103 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/time_point.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/time_point.h</destination>
+    <time>0.082 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/timeout.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/timeout.h</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:time</module>
+    <source>../../ext/outpost-core/modules/time/src/outpost/time/timeout_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/time/timeout_impl.h</destination>
+    <time>0.093 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:traits</module>
+    <source>../../ext/outpost-core/modules/traits/src/outpost/traits/legacy/result_of.h</source>
+    <destination>../../gen/sandbox-sim/outpost/traits/legacy/result_of.h</destination>
+    <time>0.187 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/README.md</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/README.md</destination>
+    <time>0.069 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/base_member_pair.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/base_member_pair.h</destination>
+    <time>0.076 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/communicator.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/communicator.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/ctlist_reflection.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/ctlist_reflection.h</destination>
+    <time>0.081 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/ctlist_reflection_detail.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/ctlist_reflection_detail.h</destination>
+    <time>0.106 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/ctlist_reflection_detail_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/ctlist_reflection_detail_impl.h</destination>
+    <time>0.127 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/error_code.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/error_code.h</destination>
+    <time>0.075 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/expected.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/expected.h</destination>
+    <time>0.080 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/functor.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/functor.h</destination>
+    <time>0.095 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/iterator.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/iterator.h</destination>
+    <time>0.079 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/iterator_impl.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/iterator_impl.h</destination>
+    <time>0.076 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/limits.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/limits.h</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/log2.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/log2.h</destination>
+    <time>0.070 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/minmax.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/minmax.h</destination>
+    <time>0.071 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/operation_result.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/operation_result.h</destination>
+    <time>0.083 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/pow.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/pow.h</destination>
+    <time>0.099 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/safe_mask.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/safe_mask.h</destination>
+    <time>0.072 ms</time>
+  </operation>
+  <operation>
+    <module>outpost:utils</module>
+    <source>../../ext/outpost-core/modules/utils/src/outpost/utils/unexpected.h</source>
+    <destination>../../gen/sandbox-sim/outpost/utils/unexpected.h</destination>
+    <time>0.164 ms</time>
+  </operation>
+</buildlog>

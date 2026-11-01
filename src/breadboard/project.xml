@@ -1,0 +1,43 @@
+<library>
+	<extends>modm:nucleo-h743zi</extends>
+	<repositories>
+		<!-- path to modm repository -->
+		<repository>
+			<path>../../ext/modm/repo.lb</path>
+		</repository>
+		<repository>
+			<path>../../ext/outpost-core/outpost.lb</path>
+		</repository>
+		<repository>
+			<path>../../ext/outpost-platform-modm/outpost.lb</path>
+		</repository>
+	</repositories>
+
+	<modules>
+		<module>modm:platform:heap</module>
+		<module>modm:freertos</module>
+		<module>modm:processing:rtos</module>
+		<module>modm:debug</module>
+		<module>modm:driver:ds18b20</module>
+		<module>modm:platform:clock</module>
+		<module>modm:platform:core</module>
+		<module>modm:platform:gpio</module>
+		<module>modm:platform:1-wire.bitbang</module>
+		<module>modm:platform:uart:5</module>
+		<module>modm:architecture:delay</module>
+		<module>modm:build:scons</module>
+        <module>modm:architecture:memory</module>
+		<module>outpost:base</module>
+		<module>outpost:rtos</module>
+		<module>outpost:hal</module>
+		<module>outpost:swb</module>
+		<module>outpost-platform-modm:hal:clock</module>
+		<module>outpost-platform-modm:hal:serial</module>
+	</modules>
+	<options>
+		<option name="modm:build:scons:include_sconstruct">False</option>
+		<option name="outpost:target">freertos</option>
+		<option name="modm:target">stm32h743zit6</option>
+		<option name="modm:build:build.path">../../build/bb</option>
+	</options>
+</library>
